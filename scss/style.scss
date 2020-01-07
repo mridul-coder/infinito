@@ -1,0 +1,420 @@
+html {
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+   ::-webkit-scrollbar-thumb {
+      background: linear-gradient(#4776e6, #8e54e9);
+      border-radius: 6px;
+   }
+}
+body {
+   h2::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      width: 50px;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-left: 2.5px;
+   }
+   .btn {
+      color: white;
+      font-weight: 500;
+      width: 120px;
+      border: 1px solid #4776e6;
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      transition: .2s linear;
+   }
+   .btn:hover {
+      background: white;
+      box-shadow: 0px -1px 12px -5px;
+      color: black;
+   }
+}
+
+/* -- NAVIGRATION -- */
+#navSection {
+   box-shadow: 3px 3px 3px #4776e6;
+   opacity: .9;
+   background: white;
+   z-index: 3;
+   .nav-link {
+      font-weight: 500;
+      color: black;
+      transition: .2s linear;
+   }
+   .nav-link:hover {
+      box-shadow: 0px -1px 12px -5px;
+      border-radius: 3px;
+      color: #4776e6;
+   }
+}
+
+/* -- HOME SECTION -- */
+#homeSection {
+   height: 93vh;
+   background-image: url(../img/woman-in-grey-jacket.jpg);
+   background-size: cover;
+   background-position: center;
+   .dark-overlay {
+      background: rgba(0, 0, 0, .75);
+      height: 100%;
+      #home-content {
+         position: relative;
+         top: 70%;
+         h3 {
+            background: -webkit-linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         h1:nth-child(2) {
+            background: -webkit-linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px
+         }
+         h4 {
+            background: -webkit-linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+         }
+         .buttons {
+            margin-left: -6px;
+         }
+         .btn:nth-child(2) {
+            color: black;
+            font-weight: 500;
+            width: 120px;
+            border: 1px solid #4776e6;
+            background: white;
+            box-shadow: 0px -1px 12px -5px;
+            transition: .2s linear;
+         }
+         .btn:nth-child(2):hover {
+            background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+            color: white;
+         }
+      }
+   }
+}
+@media only screen and (min-width: 768px) {
+   #homeSection {
+      height: 94vh;
+      #home-content {
+         top: 90%;
+      }
+   }
+}
+@media only screen and (max-width: 1024px) {
+   #homeSection {
+      height: 96vh;
+   }
+   #home-content {
+      top: 70%;
+   }
+}
+
+/* -- SERVICES SECTION -- */
+#servicesSection {
+   h2::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      width: 50px;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 2px;
+   }
+   #service-box {
+      transition: .4s linear;
+     .service-icon {
+         margin-bottom: 15px;
+         font-size: 35px;
+         color: #4776e6;
+      }
+   }
+   #service-box:hover {
+      box-shadow: 0px -1px 20px -5px;
+      border-radius: 5px;
+   }
+}
+
+/* -- ABOUT SECTION -- */
+#aboutSection {
+   background-image: url(../img/about.jpg);
+   background-size: cover;
+   .dark-overlay {
+      background: rgba(0, 0, 0, 0.1);
+   }
+   img {
+      border-radius: 25%;
+      box-shadow: -3px -3px 0px 2px #8e54e9;
+      transition: .4s linear;
+   }
+   img:hover {
+      box-shadow: -3px -3px 0px 2px #4776e6;
+      cursor: pointer;
+   }
+   .buttons {
+      margin-left: -6px;
+   }
+   .btn:nth-child(2) {
+      color: black;
+      font-weight: 500;
+      width: 120px;
+      border: 1px solid #4776e6;
+      background: white;
+      box-shadow: 0px -1px 12px -5px;
+      transition: .2s linear;
+   }
+   .btn:nth-child(2):hover {
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      color: white;
+   }
+}
+
+/* -- WORK SECTION -- */
+#workSection {
+   .buttons {
+      padding-left: 23px;
+   }
+   .btn {
+      color: black;
+      font-weight: 500;
+      width: 135px;
+      border: 1px solid #4776e6;
+      background: white;
+      box-shadow: 0px -1px 10px -5px;
+      transition: .2s linear;
+   }
+   .btn:hover {
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      color: white;
+   }
+   img {
+      transition: .2s linear;
+      box-shadow: 5px 5px 5px 0px #8e54e9;
+   }
+   img:hover {
+      box-shadow: 5px 5px 5px 0px #4776e6;
+   }
+}
+
+/* -- TESTIMONIAL SECTION -- */
+#testimonialSection {
+   background-image: url(../img/testimonial.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   .slick-prev:before,
+   .slick-next:before {
+      color: #4776e6;
+      font-size: 25px;
+   }
+   h2::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      width: 50px;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 2px;
+   }
+   .dark-overlay {
+      background: rgba(0, 0, 0, .1);
+   }
+   #testimonial-box {
+      transition: .2s linear;
+      img {
+        border-radius: 25px;
+        box-shadow: -2px -2px 0px 2px #4776e6;
+      }
+   }
+   #testimonial-box:hover {
+      box-shadow: 0px -1px 20px -5px;
+      border-radius: 5px;
+   }
+}
+
+/* -- FEATURES SECTION -- */
+#featureSection {
+   #feature-box {
+      transition: .4s linear;
+      #feature-icon {
+         cursor: pointer;
+         .fas {
+            background: none;
+            box-shadow: 0px -1px 15px -5px;
+            padding: 12px 10px;
+            font-size: 35px;
+            border-radius: 50%;
+            color: #4776e6;
+            border: 1px solid #4776e6;
+            transition: .4s linear;
+         }
+         .fa-cogs {
+            padding: 12px 8px;
+         }
+         .fa-search,
+         .fa-camera-retro {
+            padding: 12px 12px;
+         }
+         .fas:hover {
+            background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+            color: white;
+         }
+      }
+   }
+}
+
+/* -- OWL CAROUSEL BRAND SECTION -- */
+#owlCarousel {
+   background-image: url(../img/photo-of-people-near-wooden-table.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   .dark-overlay {
+      background: rgba(0, 0, 0, .75);
+   }
+   #content {
+      margin-left: 0px;
+      h2,
+      p {
+         background: -webkit-linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   }
+   .owl-dots {
+      margin-right: 10px;
+      padding-top: 20px;
+      text-align: right;
+      .owl-dot {
+         display: inline-block;
+         height: 12px !important;
+         width: 12px !important;
+         background: #8e54e9;
+         border-radius: 50%;
+         margin: 0 5px;
+      }
+      .owl-dot.active {
+         height: 15px !important;
+         width: 15px !important;
+         background: #4776e6;
+      }
+   }
+}
+
+/* -- CONTACT SECTION -- */
+#contactSection {
+   h2::after {
+      display: none;
+   }
+   .buttons {
+      margin-left: -6px;
+   }
+}
+
+/*  -- FOOTER SECTION --  */
+#footerSection {
+   background-image: url(../img/footer.jpg);
+   background-size: cover;
+   color: #f5f5f5;
+   #logo .navbar-brand {
+      margin-left: -17px;
+   }
+   .footer-links {
+      .icons {
+         .fab {
+            font-size: 17px;
+            transition: all 1s;
+         }
+         .fab:hover {
+            transform: rotate(360deg);
+         }
+      }
+      list-style: none;
+      a {
+         text-decoration: none;
+         color: #f5f5f5;
+         font-weight: 500;
+      }
+   }
+   .footer-newsletter {
+      input {
+         border: 1px solid #4776e6;
+         border-radius: 3px;
+         height: 37px;
+      }
+      .btn {
+         color: white;
+         font-weight: 500;
+         width: 43px;
+         height: 37px;
+         border: 1px solid #4776e6;
+         background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+         transition: .2s linear;
+      }
+      .btn:hover {
+         background: white;
+         color: black;
+      }
+   }
+}
+
+/* -- REUSABLE COMPONENTS -- */
+.goTop {
+    position: fixed;
+    right: 1px;
+    bottom: 35px;
+    color: white;
+    font-size: 35px;
+   i {
+      color: #8e54e9;
+      transition: .2s linear;
+   }
+   i:hover {
+      color: #4776e6;
+   }
+}
+
+#contactModal {
+   h3::after {
+      content: "";
+      display: none;
+      height: 3px;
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      width: 75px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 2px;
+   }
+   .modal-body {
+      background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+      border: none;
+      .form-control {
+         border-radius: 3px;
+      }
+      i {
+         font-size: 50px;
+      }
+      .btn {
+         color: black;
+         font-weight: 500;
+         width: 120px;
+         border: 1px solid #4776e6;
+         background: white;
+         transition: .2s linear;
+      }
+      .btn:hover {
+         background: linear-gradient(90deg, #4776e6 0%,#8e54e9 100% );
+         color: white;
+      }
+   }
+}
